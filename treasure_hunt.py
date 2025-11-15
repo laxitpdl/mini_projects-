@@ -37,9 +37,38 @@ even = number % 2. # if remainder = 0
 if even == 0:
     print ("EVEN")
 else:
-    print("ODD")    
+    print("ODD") 
     
     
+
+print ("Welcome to python pizza Deliveries! ")
+size = input ("What size pizza do you want? 'S' for small, 'M' for medium or 'L' for large: ")
+pineapple = input ("Do you want pineapple on your pizza? 'Y' for yes or 'N' for no: ")
+cheese = input ("Do you want extra cheese on your pizza? 'Y' for yes or 'N' for no: ")
+
+bill = 0
+
+if size == 'S' or 's':
+    bill += 15
+elif size == 'M' or 's':
+    bill += 20
+elif size == 'L' or 'l':
+    bill += 25
+else:
+    print ("Enter S, M or L: ")
+       
+
+if pineapple == 'Y' or 'y':
+    if size == 'S' or 's':
+        bill += 2
+    else:
+        bill += 3    
+        
+if cheese == 'Y' or 'y':
+    bill += 1
+    
+print (f"Your total bill is ${bill}")    
+        
     
     
     
