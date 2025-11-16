@@ -48,30 +48,70 @@ cheese = input ("Do you want extra cheese on your pizza? 'Y' for yes or 'N' for 
 
 bill = 0
 
-if size == 'S' or 's':
+if size == 's':
     bill += 15
-elif size == 'M' or 's':
+elif size == 'm':
     bill += 20
-elif size == 'L' or 'l':
+elif size == 'l':
     bill += 25
 else:
     print ("Enter S, M or L: ")
        
 
-if pineapple == 'Y' or 'y':
-    if size == 'S' or 's':
+if pineapple == 'y':
+    if size == 's':
         bill += 2
     else:
         bill += 3    
         
-if cheese == 'Y' or 'y':
+if cheese == 'y':
     bill += 1
     
 print (f"Your total bill is ${bill}")    
         
-    
-    
-    
+ 
+
+# logical operators: and or not  
+
+print('''
+                    ____...------------...____
+               _.-"` /o/__ ____ __ __  __ \o\_`"-._
+             .'     / /                    \ \     '.
+             |=====/o/======================\o\=====|
+             |____/_/________..____..________\_\____|
+             |   _/ \_     <_o#\__/#o_>     _/ \_   |
+             \_________\####/_________/
+              |===\!/========================\!/===|
+              |   |=|          .---.         |=|   |
+              |===|o|=========/     \========|o|===|
+              |   | |         \() ()/        | |   |
+              |===|o|======{'-.) A (.-'}=====|o|===|
+              | __/ \__     '-.\.../.-'    __/ \__ |
+              |==== .'.'^'.'.====|
+          jgs |  _\o/   __  {.' __  '.} _   _\o/  _|
+              `""""-""""""""""""""""""""""""""-""""`
+
+
+''')
+print("Hello, traveler are you lost! or are you in right place!\nWelcome to Treasure island!\nYour journey begins now be ready! ")
+way = input ("Now you are standing on the cross road. Where do you want to go?\nType 'left' or 'right': ").lower()
+if way == 'left':
+    lake = input("You are safe! Now you've come to a lake. Far away in middle of the lake there is an island...\nType 'wait' to wait for a boat or 'swim' if you want to swim across!: " ).lower()
+    if lake == 'wait':
+        door = input ("Well done stranger! now you stand at the final door one of these door has fortune and other has death choose wisely! Type 'red' for red door, 'yellow' for yellow door and 'blue' for blue door!: ").lower()
+        if door == 'yellow':
+            print("You did it you found the treasure! ")
+        elif door == 'red':
+            print ("Dead! on lava.. GAME OVER!")
+        elif door == 'blue':
+            print ("Hunted by demons... GAME OVER!")
+        else:
+            print("Invalid option...")
+    else: 
+        print ("Bad idea you were eaten by hungry sharks!.. GAME OVER!")                
+else:
+    print("You are shot by smugglers! Try next time.. GAME OVER!")    
+   
 
 
         
