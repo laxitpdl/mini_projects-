@@ -59,9 +59,13 @@ game = [Rock, Scissor, Paper]
 user = int(input("Enter 0,1,2 for Rock, Paper or Scissor: "))
 
 if user>=3 or user<=0:
-    print(f"You choose {user}")
+    print(f"You choose: {user}")
     print (game[user])
-
+    
+else:
+    print("Try again!")
+    
+    
 computer = random.randint(0,2)
 print(f"Computer choose: ")
 print(game[computer])

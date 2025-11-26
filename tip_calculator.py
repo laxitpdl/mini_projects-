@@ -1,15 +1,15 @@
-print(type(1))
-print(type(True))
+#print(type(1))
+#print(type(True))
 
-a = "123" # string
-b = int(a) # integer 
-print(type(b))
+#a = "123" # string
+#b = int(a) # integer 
+#print(type(b))
 
 
-name = input("enter your name: ") #str
-length = len (name) #int
-print ("Length in your name " , length)
-print ("Length in your name " + str(length)) #TypeError: can only concatenate str (not "int") to str
+#name = input("enter your name: ") #str
+#length = len (name) #int
+#print ("Length in your name " , length)
+#print ("Length in your name " + str(length)) #TypeError: can only concatenate str (not "int") to str
 
 #round(3.9) = 4 
 #or,
